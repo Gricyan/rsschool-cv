@@ -130,3 +130,42 @@ section {
     font-size: 18px;
     text-decoration: none;
 }
+
+.contacts-list {    
+    padding-inline-start: 10px;
+    line-height: 1.5em;
+}
+.skills, .uducat, .langs {    
+    line-height: 2em;
+}
+#summary, #education, #languages {
+    line-height: 1.5em;
+}
+.contacts-list li {
+    list-style: none;
+    padding-left: 10px;
+}
+.contacts-list li a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+.contacts-list li img {
+    width: 25px;
+    padding-right: 10px;
+}
+.foto img {
+    width: 100%;
+}
+h2, h3, h4, summary {
+    color: #32beff;
+}
+section {
+    padding-top: 10px;
+}
+hr {
+    width: 50%;
+    border-top: 1px solid #32beff;
+    border-bottom: 1px solid #32beff;
+    display: inline-block;
+    margin: 0 auto;
+}
