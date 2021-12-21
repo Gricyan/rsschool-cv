@@ -1,2 +1,1 @@
-# rsschool-cv
-RS School CV task
+https://gricyan.github.io/rsschool-cv/cv
