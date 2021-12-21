@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Ivan Hryhoriev</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"  href="./css/rainbow.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.svg">
+    <script src="./js/rainbow-custom.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -131,7 +133,7 @@
                   <h2>Education</h2>
                     <h3>Cosinus School</h3>
                       <ul class="uducat">                  
-                        <li>Specialisation: Information Technology Technician</li> 
+                        <li>Specialization: Information Technology Technician</li> 
                         <li>Professional qualifications:
                           <ul>
                             <li>EE.08 Installation and operation of computer systems, peripheral devices and networks</li>
@@ -151,12 +153,27 @@
                 </section>           
                 <hr>          
                 <section id="code">
-                <h2>Code example</h2>   
-                
-                <pre><code data-language="javascript">
-    
-                </code> </pre>
-                </section>  
+                    <h2>Code example</h2>   
+                    
+                    <pre><code data-language="javascript">
+// live output when user changes input's values
+jQuery(document).ready(function( $ ){    
+  $('input').keyup(function(){ 
+
+    var boardWide = 113; // width of board is always the same	
+    var actualPrice = Number($('#input_price').val()); // input price
+    var fenceLength  = Number($('#length').val()); // board fence length
+    var boardsBetween = Number($('#dist').val()); // distance between the boards
+    var fenceHeight  = Number($('#height').val()); // fence height  
+    var boardsNumber  = Math.round(1000*fenceLength / (boardWide + 10*boardsBetween))); // number of boards  
+    var boardsSum  = (boardsNumber*fenceHeight); // sum  
+
+    $('#boards_number').html(boardsNumber); // output number of boards
+    $('#total_price').html(Math.round(boardsSum*actualPrice)); // output total price
+  });
+});
+                    </code> </pre>
+                    </section> 
                 <hr>
                 <section id="my-work">
                   <h2>My works</h2>
