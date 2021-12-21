@@ -69,3 +69,13 @@ jQuery(document).ready(function( $ ){
     });
 });
 ```
+
+## Languages:
+
+* **Russian** (*native*)
+* **Ukrainian** (*native*)
+* **Polish** (*B1*)
+* **English** (*B1*) 
+
+---
+![logo rsschool](assets/rsschool-logo.png "logo rsschool")
