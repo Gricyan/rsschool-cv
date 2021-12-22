@@ -4,3 +4,7 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
     });
 });
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
