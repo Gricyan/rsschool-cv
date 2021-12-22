@@ -41,7 +41,7 @@
                                   <a href="#code" class="header_link">Code</a>
                                 </li>                              
                                 <li>
-                                    <a href="#my-work" class="header_link">Wy works</a>
+                                    <a href="#my-projects" class="header_link">Projects</a>
                                 </li>
                                 <li>
                                     <a href="#video" class="header_link">Video</a>
@@ -57,7 +57,7 @@
               <aside class="left_columb">
                 <section class="foto">
                   <h2 class="visually-hidden">My photo</h2>
-                  <img src="./assets/my-photo.jpg" alt="Photo Ivan Hryhoriev">
+                  <img src="./assets/my-cv-photo.jpg" alt="Photo Ivan Hryhoriev">
                 </section>
                 <section id="contacts">
                   <h2>Contacts</h2>
@@ -155,7 +155,7 @@
                 <section id="code">
                     <h2>Code example</h2>   
                     
-                    <pre><code data-language="javascript">
+                    <pre id="code_window"><code data-language="javascript">
 // live output when user changes input's values
 jQuery(document).ready(function( $ ){    
   $('input').keyup(function(){ 
@@ -175,9 +175,29 @@ jQuery(document).ready(function( $ ){
                     </code> </pre>
                     </section> 
                 <hr>
-                <section id="my-work">
-                  <h2>My works</h2>
-                  <p>Here are some of my projects</p>                    
+                <section id="my-projects">
+                  <h2>My projects</h2>
+                  <p>Here are some of them</p>
+                  <div class="work_photo">
+                    <figure class="single_img">                    
+                      <a href="https://pasha-group.ru/tr/ana-sayfa/" target="_blank">
+                      <img src="./images/pasha-group.jpg" alt="pasha-group" class="my work"></a>
+                      <h3><a href="https://pasha-group.ru/tr/ana-sayfa/" target="_blank">Yarns</a></h3>
+                      <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
+                    </figure> 
+                    <figure class="single_img">                    
+                      <a href="https://shtaketa.com.ua/" target="_blank">
+                      <img src="./images/shtaketa.jpg" alt="shtaketa" class="my work"></a>
+                      <h3><a href="https://shtaketa.com.ua/" target="_blank">Shelterboard</a></h3>
+                      <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
+                      </figure> 
+                    <figure class="single_img">                    
+                      <a href="https://vodostok.km.ua/" target="_blank">
+                      <img src="./images/vodostok.jpg" alt="vodostok" class="my work"></a>
+                      <h3><a href="https://vodostok.km.ua/" target="_blank">RainGuard</a></h3>
+                      <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
+                    </figure> 
+                  </div> 
                 </section>
                 <hr>
                 <section id="video">
@@ -186,6 +206,16 @@ jQuery(document).ready(function( $ ){
               </main>
             </div>
         </div>
+        <footer class="cv_footer">
+            <div class="cv_footer_item">
+                <img src="icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
+            </div>
+            <div class="cv_footer_item">
+              <h5>RS School 2021</h5></div>
+            <div class="cv_footer_item">
+              <a href="https://rs.school/js/" title="rsschool website"><img class="footer_rs_img" src="./images/rsschool-logo.png" alt="rsschol logo"></a>
+            </div>
+          </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>    
     <script src="./js/script.js"></script>
   </body>
