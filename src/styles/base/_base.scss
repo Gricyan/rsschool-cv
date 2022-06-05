@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  @extend %font-code;
+  @include font(1.6rem, 1.7rem);
+}
+
+.body__wrapper {
+  @extend %font-primary;
+  @include font(1.6rem, 2.4rem, $spacing: 0);
+  color: $color-text-light;
+  background-color: $color-bg-dark;  
+  caret-color: transparent;
+}
+
+.wrapper {  
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0px 20px;
+  background-color: $color-bg-dark-l;  
+}

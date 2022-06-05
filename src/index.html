@@ -5,21 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Ivan Hryhoriev</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/rainbow.css">
+  <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
-  
 </head>
 
-<body>
-  <div class="wrapper">
+<body class="body">
+  <div class="body__wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header_body">
-          <a href="#" class="header_logo">
-            <img src="./src/assets/icons/cv-logo.svg" alt="logo">
+      <div class="header__wrapper wrapper">
+        <div class="header__container">
+          <a href="/" class="header__logo">
+            <img src="./assets/icons/cv-logo.svg" alt="cv logo">
           </a>
 
           <div class="header_burger">
@@ -51,37 +47,38 @@
         </div>
       </div>
     </header>
-  </div>
+
   <div class="content">
-    <div class="container main_content">
+    <div class="wrapper main_content">
       <aside class="left_columb">
         <section class="photo">
-          <h2 class="visually-hidden">My photo</h2>
-          <img src="./src/assets/images/my-photo.jpg" alt="Photo Ivan Hryhoriev">          
+          <h2 class="visually-hidden">Photo Ivan Hryhoriev</h2>
+          <img src="./assets/images/my-cv-photo.jpg" alt="Photo Ivan Hryhoriev">
+          <img class="photo-frame" src="./images/frame.svg" alt="Photo Ivan Hryhoriev">
         </section>
         <section id="contacts">
           <h2>Contacts</h2>
           <ul class="contacts-list">
             <li>
-              <img src="./src/assets/icons/my-phone.svg" alt="my phone"> <a href="tel:+48575684463">+48 575 684 463</a>
+              <img src="./assets/icons/my-phone.svg" alt="my phone"> <a href="tel:+48575684463">+48 575 684 463</a>
             </li>
             <li>
-              <img src="./src/assets/icons/my-address.svg" alt="my address"> Warsaw, Poland
+              <img src="./assets/icons/my-address.svg" alt="my address"> Warsaw, Poland
             </li>
             <li>
-              <img src="./src/assets/icons/my-mail.svg" alt="my mail"> <a href="mailto:admin@web-architect.pro">Email Me</a>
+              <img src="./assets/icons/my-mail.svg" alt="my mail"> <a href="mailto:admin@web-architect.pro">Email Me</a>
             </li>
             <li>
-              <img src="./src/assets/icons/my-telegram.svg" alt="my telegram"> <a href="tg://resolve?domain=Jan_Grycan" target="_blank">Ivan_Gricyan</a>
+              <img src="./assets/icons/my-telegram.svg" alt="my telegram"> <a href="tg://resolve?domain=Jan_Grycan" target="_blank">Ivan_Gricyan</a>
             </li>
             <li>
-              <img src="./src/assets/icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
+              <img src="./assets/icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
             </li>
             <li>
-              <img src="./src/assets/icons/my-discord.svg" alt="my discord"> <a href="https://discordapp.com/users/728380730018889869/" target="_blank">Ivan Gricyan</a>
+              <img src="./assets/icons/my-discord.svg" alt="my discord"> <a href="https://discordapp.com/users/728380730018889869/" target="_blank">Ivan Gricyan</a>
             </li>
             <li>
-              <img src="./src/assets/icons/my-linkedin.svg" alt="my linkedin"> <a href="https://www.linkedin.com/in/ivanhryhoriev/" target="_blank">ivanhryhoriev</a>
+              <img src="./assets/icons/my-linkedin.svg" alt="my linkedin"> <a href="https://www.linkedin.com/in/ivanhryhoriev/" target="_blank">ivanhryhoriev</a>
             </li>
           </ul>
         </section>
@@ -162,18 +159,20 @@
         <hr>
         <section id="code">
           <h2>Code example</h2>
-
-          <pre id="code_window"><code data-language="javascript">
+          
+          <pre id="code_window">
+            <code data-language="javascript">
 function reverse(n) {
   let str = String(Math.abs(n));
   let result = '';
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i &#60; str.length; i++) {
 
       result = `${str[i]}${result}`
   }
   return result;
 }
-                    </code> </pre>
+      </code>
+        </pre> 
         </section>
         <hr>
         <section id="my-projects">
@@ -182,19 +181,19 @@ function reverse(n) {
           <div class="work_photo">
             <figure class="single_img">
               <a href="https://pasha-group.ru/tr/ana-sayfa/" target="_blank">
-                <img src="./src/assets/images/pasha-group.jpg" alt="pasha-group" class="my work"></a>
+                <img src="./assets/images/pasha-group.jpg" alt="pasha-group" class="project-item__image"></a>
               <h3><a href="https://pasha-group.ru/tr/ana-sayfa/" target="_blank">Yarns</a></h3>
               <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
             </figure>
             <figure class="single_img">
               <a href="https://shtaketa.com.ua/" target="_blank">
-                <img src="./src/assets/images/shtaketa.jpg" alt="shtaketa" class="my work"></a>
+                <img src="./assets/images/shtaketa.jpg" alt="shtaketa" class="project-item__image"></a>
               <h3><a href="https://shtaketa.com.ua/" target="_blank">Shelterboard</a></h3>
               <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
             </figure>
             <figure class="single_img">
               <a href="https://vodostok.km.ua/" target="_blank">
-                <img src="./src/assets/images/vodostok.jpg" alt="vodostok" class="my work"></a>
+                <img src="./assets/images/vodostok.jpg" alt="vodostok" class="project-item__image"></a>
               <h3><a href="https://vodostok.km.ua/" target="_blank">RainGuard</a></h3>
               <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
             </figure>
@@ -203,22 +202,23 @@ function reverse(n) {
       </main>
     </div>
   </div>
-  <footer class="cv_footer">
-    <div class="container_footer">
-      <div class="cv_footer_item">
-        <img src="./src/assets/icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
+  <footer class="footer">
+    <div class="wrapper footer__container">
+      <div class="footer__item">
+        <img class="footer__item_github" src="./assets/icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
       </div>
-      <div class="cv_footer_item">
+      <div class="footer__item">
         <h5>RS School <span id="year"></span></h5>
       </div>
-      <div class="cv_footer_item">
-        <a href="https://rs.school/js/" target="_blank" title="rs school website"><img class="footer_rs_img" src="./src/assets/images/rsschool-logo.png" alt="rs school logo"></a>
+      <div class="footer__item">
+        <a href="https://rs.school/js/" target="_blank" title="rs school website"><img class="footer__item_rs-logo" src="./assets/icons/rs-school-logo.svg" alt="rs school logo"></a>
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="./src/js/rainbow.js"></script>
-  <script src="./js/script.js"></script>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="./rainbow.js"></script>
 </body>
 
 </html>
