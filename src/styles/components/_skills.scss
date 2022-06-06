@@ -2,9 +2,7 @@
   background-image: url(../assets/icons/icon-skills.svg);
 }
 
-
 .skills__items {
-    // line-height: 2em;
     @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
     gap: 0.5em; 
     list-style: none;

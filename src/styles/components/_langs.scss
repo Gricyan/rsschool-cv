@@ -1,0 +1,25 @@
+.langs__title_icon {
+  background-image: url(../assets/icons/icon-langs.svg);
+}
+
+.langs__items {
+  line-height: 2em;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.langs__items li {
+  @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
+  gap: 0.5rem;
+}
+
+.langs__items_icon {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../assets/icons/icon-checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

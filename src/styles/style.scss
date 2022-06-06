@@ -13,6 +13,7 @@
 @import "components/burger";
 @import "components/contacts";
 @import "components/skills";
+@import "components/langs";
 @import "components/intro";
 @import "components/main";
 @import "components/footer";
@@ -120,8 +121,7 @@ section {
 
 
 
-.uducat,
-.langs {
+.uducat {
     line-height: 2em;
 }
 
