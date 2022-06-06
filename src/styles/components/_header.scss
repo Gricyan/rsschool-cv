@@ -22,6 +22,12 @@
   position: relative;
   @include flex ($flex: flex, $wrap: nowrap, $justify: space-between);   
   height: 80px;
+  @include media-tablet {
+    height: 65px;
+  }  
+  @include media-mobile {
+    height: 50px;
+  }  
 }
 
 .header__logo {
@@ -30,6 +36,9 @@
   overflow: hidden;
   position: relative;
   z-index: 3;
+  @include media-tablet {
+    flex: 0 0 115px;
+  }  
 }
 
 .header__logo img {

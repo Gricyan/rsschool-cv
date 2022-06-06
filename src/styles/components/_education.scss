@@ -1,0 +1,37 @@
+.education__title_icon {
+  background-image: url(../assets/icons/icon-education.svg);
+}
+
+.education__item {
+  padding-inline-start: 1px;
+  line-height: 3.2rem;
+  list-style: none;
+  & ul {
+    padding-inline-start: 13px;
+  }
+}
+
+.education__item li,
+.education__item li ul li,
+.education__item ul ul {
+  @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
+  gap: 0.5rem;
+}
+
+.education__item a {
+  color: $color-primary;
+  @extend %transition; 
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.education__item_icon {
+  background-image: url(../assets/icons/icon-checked.svg);
+}
+
+.inner-li-icon {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-image: url(../assets/icons/icon-circle.svg);
+}

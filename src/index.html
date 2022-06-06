@@ -45,18 +45,16 @@
             </ul>
           </nav>
 
-
         </div>
       </div>
     </header>
 
+    <div class="wrapper main__content">
+      <aside class="aside">
 
-    <div class="wrapper main_content">
-      <aside class="left_columb">
-        <section class="photo">
-          <h2 class="visually-hidden">Photo Ivan Hryhoriev</h2>
-          <img src="./assets/images/my-cv-photo.jpg" alt="Photo Ivan Hryhoriev">          
-        </section>
+        <div class="main__photo">          
+          <img src="./assets/images/my-photo-high.jpg" alt="Photo Ivan Hryhoriev">          
+        </div>
 
         <section id="contacts">
           <div class="contacts__title section-title">
@@ -119,16 +117,16 @@
           </div>
 
           <ul class="langs__items">
-            <li><span class="langs__items_icon"></span>English <span class="highlighted-text">(B1)</span></li>
-            <li><span class="langs__items_icon"></span>Polish <span class="highlighted-text">(B1)</span></li>
-            <li><span class="langs__items_icon"></span>Russian <span class="highlighted-text">(native)</span></li>
-            <li><span class="langs__items_icon"></span>Ukrainian <span class="highlighted-text">(native)</span></li>
+            <li><span class="langs__items_icon item-icon"></span>English <span class="highlighted-text">(B1)</span></li>
+            <li><span class="langs__items_icon item-icon"></span>Polish <span class="highlighted-text">(B1)</span></li>
+            <li><span class="langs__items_icon item-icon"></span>Russian <span class="highlighted-text">(native)</span></li>
+            <li><span class="langs__items_icon item-icon"></span>Ukrainian <span class="highlighted-text">(native)</span></li>
           </ul>
         </section>
 
       </aside>
 
-      <main class="cv_content">
+      <main class="main">
 
         <section id="intro">
           <div class="intro__header">
@@ -153,32 +151,45 @@
         </section>
         
         <section id="education">
-          <h2>Education</h2>
+
+          <div class="education__title section-title">
+            <span class="education__title_icon title-icon"></span>
+            <h2>Education</h2>
+          </div>
+
+          <h3>Trainings and courses</h3>
+          <ul class="education__item">            
+            <li><span class="education__item_icon item-icon"></span>The Rolling Scopes School JS/FE Pre-School 2022 <a href="https://app.rs.school/certificate/q97ro2jw" target="_blank">JavaScript</a></li>
+            <li><span class="education__item_icon item-icon"></span><a href="https://www.sololearn.com/profile/23960808" target="_blank">Sololearn</a> and <a href="https://code-basics.com/" target="_blank">Code-basics</a>: HTML, CSS, JS Basics, Responsive design</li>
+            <li><span class="education__item_icon item-icon"></span>Cisco Networking Academy: IT Essential and <a href="https://www.credly.com/badges/72883930-5411-44c6-a176-095d591a15d6?source=linked_in_profile" target="_blank">CCNAv7</a></li>
+            <li><span class="education__item_icon item-icon"></span>First Kiev Foreign Language Courses: English Translator</li>
+          </ul>
+
           <h3>Cosinus School</h3>
-          <ul class="uducat">
-            <li>Specialization: Information Technology Technician</li>
-            <li>Professional qualifications:
+          <ul class="education__item">
+            <li><span class="education__item_icon item-icon"></span>Specialization: Information Technology Technician
               <ul>
-                <li>EE.08 Installation and operation of computer systems, peripheral devices and networks</li>
-                <li>EE.09 Programming, development and administration of websites and databases</li>
+                <li><span class="inner-li-icon item-icon"></span>EE.08 Installation and operation of computer systems, peripheral devices and networks</li>
+                <li><span class="inner-li-icon item-icon"></span>EE.09 Programming, development and administration of websites and databases</li>
               </ul>
             </li>
           </ul>
+
           <h3>Khmelnytsky University of Management and Law</h3>
-          <ul class="uducat">
-            <li>Specialization: Civil Law</li>
-            <li>Educational level: Master's degree</li>
+          <ul class="education__item">
+            <li><span class="education__item_icon item-icon"></span>Specialization: Civil Law</li>
+              <ul>
+                <li><span class="inner-li-icon item-icon"></span>Educational level: Master's degree</li>
+              </ul>
           </ul>
-          <h3>Trainings and courses</h3>
-          <ul class="uducat">
-            <li>First Kiev Foreign Language Courses: <span>English Translator</span></li>
-            <li>Cisco Networking Academy: <span>IT Essential and <a href="https://www.credly.com/badges/72883930-5411-44c6-a176-095d591a15d6?source=linked_in_profile">CCNAv7</a></span></li>
-            <li><a href="https://www.sololearn.com/profile/23960808">Sololearn</a> and <a href="https://code-basics.com/">Code-basics</a>: <span>HTML, CSS, JS Basics, Responsive design</span></li>
-          </ul>
+          
         </section>
-        <hr>
+    
         <section id="code">
-          <h2>Code example</h2>
+          <div class="code__title section-title">
+            <span class="code__title_icon title-icon"></span>
+            <h2>Code example</h2>
+          </div>
           
           <pre id="code_window">
             <code data-language="javascript">
@@ -190,11 +201,10 @@ function reverse(n) {
       result = `${str[i]}${result}`
   }
   return result;
-}
-      </code>
-        </pre> 
+}           </code>
+          </pre> 
         </section>
-        <hr>
+        
         <section id="my-projects">
           <h2>My projects</h2>
           <p>Here are some of them</p>

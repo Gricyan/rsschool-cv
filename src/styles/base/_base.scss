@@ -16,6 +16,16 @@ code {
   @include font(1.6rem, 1.7rem);
 }
 
+section {
+  padding-top: 10px;
+}
+
+body.lock {
+  @include media-tablet {
+    overflow: hidden;
+  }  
+}
+
 .body__wrapper {
   @extend %font-primary;
   @include font(1.6rem, 2.4rem, $spacing: 0);
@@ -31,7 +41,36 @@ code {
   background-color: $color-bg-dark-l;  
 }
 
+.aside {
+  width: 25%;
+}
+
+.main {
+  width: 75%;  
+}
+
+.aside,
+.main {
+  padding: 15px;
+  @include media-tablet {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 10px;
+  }
+  @include media-mobile {    
+    width: calc(100% - 10px);
+    padding: 5px; 
+  }
+  @include media-mobile-small {    
+    width: 100%;
+    padding: 0; 
+  }
+}
+
 h1,
+h2,
+h3,
+h4
 .highlighted-text {
   color: $color-primary;
 }
@@ -48,4 +87,14 @@ h1,
   margin-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.item-icon {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

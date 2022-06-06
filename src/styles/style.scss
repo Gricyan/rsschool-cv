@@ -15,6 +15,8 @@
 @import "components/skills";
 @import "components/langs";
 @import "components/intro";
+@import "components/education";
+@import "components/code";
 @import "components/main";
 @import "components/footer";
 
@@ -28,40 +30,17 @@
 
 
 
-aside,
-main {
-    padding: 15px;
-}
 
 
 
 
 
-aside {
-    width: 25%;
-}
-
-main {
-    width: 75%;
-}
-
-section {
-    display: block;
-}
 
 
-.content_text {
-    font-size: 1em;
-    line-height: 1.25em;
-}
 
-.content_text.p {
-    margin: 0px 0px 20px 0px;
-}
 
-.content {
-    padding: 80px 0px 0px 0px;
-}
+
+
 
 
 
@@ -73,43 +52,19 @@ section {
     display: flex;
 }
 
-.photo-frame {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    animation: screw 20000ms alternate infinite ease-out;
-}
+
 
 @media (max-width: 767px) {
 
-    aside,
-    main {
-        width: 80%;
-        margin: 0 auto;
-    }
     .work_photo {
         display: block;
     }
-    body.lock {
-        overflow: hidden;
-    }
-
-    .header_body {
-        height: 50px;
-    }
-    .header_logo {
-        flex: 0 0 70px;
-    }
-    
+   
 
 }
 
 @media (max-width: 420px) {
-    aside,
-    main {
-        width: 90%;
-        margin: 0 auto;
-    }
+
     figure {
         margin-inline-start: 5px;
         margin-inline-end: 5px;
@@ -121,51 +76,13 @@ section {
 
 
 
-.uducat {
-    line-height: 2em;
-}
-
-#summary,
-#education,
-#languages {
-    line-height: 1.5em;
-}
 
 
-.photo {
-    position: relative;
-}
 
-.photo img {
-    width: 100%;
-}
 
-h2,
-h3,
-h4,
-#summary b {
-    color: $color-primary;
-}
 
-section {
-    padding-top: 10px;
-}
 
-hr {
-    width: 50%;
-    border-top: 1px solid $color-primary;
-    border-bottom: 1px solid $color-primary;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.colored {
-    color: $color-primary;
-    font-style: italic;
-}
-
-.single_img img,
-.photo img {
+.single_img img {
     border-radius: 5px;
     width: 100%;
     /* box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 35%); */
@@ -209,33 +126,6 @@ figcaption {
     font-style: italic;
 }
 
-pre {
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 35%);
-}
-
-pre code.rainbow-show {
-    display: block;
-    overflow-x: auto;
-    padding: 1em;
-}
-
-pre code::-webkit-scrollbar {
-    width: 10px;
-    background-color: transparent;
-}
-
-pre code::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: $color-primary;
-}
-
-pre code::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    background-color: transparent;
-}
 
 .docs_link {
     text-decoration: none;

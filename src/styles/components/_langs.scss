@@ -3,7 +3,7 @@
 }
 
 .langs__items {
-  line-height: 2em;
+  line-height: 3.2rem;
   list-style: none;
   padding-inline-start: 0;
 }
@@ -14,12 +14,5 @@
 }
 
 .langs__items_icon {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
   background-image: url(../assets/icons/icon-checked.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }

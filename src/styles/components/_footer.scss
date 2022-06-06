@@ -6,6 +6,10 @@
 .footer__container {
   @include flex ($flex: flex, $wrap: nowrap, $justify: space-evenly); 
   padding: 15px 0;
+  @include media-mobile {    
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 footer a {
@@ -15,6 +19,9 @@ footer a {
 .footer__item {
   width: 33%;  
   text-align: center;
+  @include media-mobile {    
+    width: 100%;
+  }
 }
 
 .footer__item:nth-child(1) {
