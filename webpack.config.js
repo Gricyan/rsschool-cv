@@ -47,7 +47,7 @@ module.exports = {
         noErrorOnMissing: true,
       },
       {
-        from: path.resolve(__dirname, './js/rainbow.js'),
+        from: path.resolve(__dirname, './src/js/rainbow.js'),
         info: (file) => ({ minimized: true }),
       }
     ]

@@ -30,3 +30,22 @@ code {
   padding: 0px 20px;
   background-color: $color-bg-dark-l;  
 }
+
+h1,
+.highlighted-text {
+  color: $color-primary;
+}
+
+.section-title {
+  @include flex ($flex: flex, $wrap: nowrap, $justify: flex-start);   
+}
+
+.title-icon {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

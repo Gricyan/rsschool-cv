@@ -1,0 +1,7 @@
+.main_content {
+  margin-top: 80px;
+  display: flex;
+  @include media-tablet {
+    display: block;
+  }     
+}

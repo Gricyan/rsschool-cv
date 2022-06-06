@@ -3,6 +3,7 @@
 $color-primary: #8cddff;
 $color-bg-dark: #0B0D11;
 $color-bg-dark-l: #292A2E;
+$color-bg-light: #ffffff;
 
 $color-text-light: #eeeeee;
 
@@ -13,8 +14,11 @@ $color-light: #00ffca;
 
 $color-bg: #222222;
 
-$color-text: #dddddd;
+
 
 /* basic sizes */
 
 $content-width: 1200px;
+$tablet-width: 768px;
+$mobile-big-width: 414px;
+$mobile-small-width: 320px;

@@ -1,0 +1,26 @@
+.contacts__title_icon {
+  background-image: url(../assets/icons/icon-contacts.svg);
+}
+
+.contacts__list {
+  line-height: 2em;
+  padding-inline-start: 8px;
+}
+
+.contacts__list li {
+  @include flex ($flex: flex, $wrap: nowrap, $justify: flex-start);   
+  list-style: none;  
+}
+
+.contacts__list li a {
+  color: $color-text-light;
+  text-decoration: none;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.contacts__list li img {
+  width: 22px;
+  margin-right: 10px;    
+}

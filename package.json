@@ -4,6 +4,7 @@
   "description": "cv task for rs-school",
   "private": "true",
   "scripts": {
+    "style": "sass src/styles/style.scss src/styles/style.css",
     "dev": "webpack  --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",

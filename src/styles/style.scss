@@ -8,8 +8,12 @@
 @import "base/fonts";
 @import "base/rainbow";
 
-@import "components/burger";
 @import "components/header";
+@import "components/menu";
+@import "components/burger";
+@import "components/contacts";
+@import "components/skills";
+@import "components/intro";
 @import "components/main";
 @import "components/footer";
 
@@ -28,9 +32,7 @@ main {
     padding: 15px;
 }
 
-.main_content {
-    display: flex;   
-}
+
 
 
 
@@ -60,27 +62,11 @@ section {
     padding: 80px 0px 0px 0px;
 }
 
-.header_burger {
-    display: none;
-}
 
-.header_list {
-    display: flex;
-    position: relative;
-    z-index: 2;
-}
 
-.header_list li {
-    list-style: none;
-    margin: 0px 0px 0px 20px;
-}
 
-.header_link {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 18px;
-    text-decoration: none;
-}
+
+
 
 .work_photo {
     display: flex;
@@ -94,9 +80,7 @@ section {
 }
 
 @media (max-width: 767px) {
-    .main_content {
-        display: block;
-    }
+
     aside,
     main {
         width: 80%;
@@ -108,76 +92,15 @@ section {
     body.lock {
         overflow: hidden;
     }
-    .header_list {
-        display: block;
-    }
-    .header_list li {
-        list-style: none;
-        margin: 0px 0px 20px 0px;
-    }
+
     .header_body {
         height: 50px;
     }
     .header_logo {
         flex: 0 0 70px;
     }
-    .header_burger {
-        display: block;
-        position: relative;
-        min-width: 30px;
-        height: 20px;
-        z-index: 3;
-    }
-    .header_burger span {
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        top: 9px;
-        transition: all 0.1s ease 0s;
-    }
-    .header_burger:before,
-    .header_burger:after {
-        content: '';
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        transition: all 0.3s ease 0s;
-    }
-    .header_burger:before {
-        top: 0;
-    }
-    .header_burger:after {
-        bottom: 0;
-    }
-    .header_burger.active:before {
-        transform: rotate(45deg);
-        top: 9px;
-    }
-    .header_burger.active:after {
-        transform: rotate(-45deg);
-        bottom: 9px;
-    }
-    .header_burger.active span {
-        transform: scale(0);
-    }
-    .header_menu {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: -110%;
-        transition: all 0.3s ease 0s;
-        background-color: #0B0D11;
-        padding: 70px 10px 20px 0px;
-        overflow: auto;
-    }
-    .header_menu.active {
-        top: 0%;
-    }
+    
+
 }
 
 @media (max-width: 420px) {
@@ -194,12 +117,9 @@ section {
 
 
 
-.contacts-list {
-    padding-inline-start: 10px;
-    line-height: 1.5em;
-}
 
-.skills,
+
+
 .uducat,
 .langs {
     line-height: 2em;
@@ -211,20 +131,6 @@ section {
     line-height: 1.5em;
 }
 
-.contacts-list li {
-    list-style: none;
-    padding-left: 10px;
-}
-
-.contacts-list li a {
-    color: #e6e6e6;
-    text-decoration: none;
-}
-
-.contacts-list li img {
-    width: 25px;
-    padding-right: 10px;
-}
 
 .photo {
     position: relative;
@@ -352,10 +258,6 @@ ul>li>a {
     color: inherit;
 }
 
-ul>li>span {
-    color: $color-primary;
-    font-weight: 700;
-}
 
 ul>li>span>a {
     color: $color-primary;

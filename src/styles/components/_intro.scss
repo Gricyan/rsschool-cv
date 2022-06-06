@@ -1,0 +1,33 @@
+.intro__header {
+  min-height: 65px;
+}
+
+.intro__name {
+  margin-bottom: 16px;
+}
+
+.intro__text {
+  display: inline-block;
+}
+
+.intro__text_frontend {  
+  border-top: 2px solid $color-primary;
+  padding-top: 5px; 
+}
+
+.intro__title {
+  margin-top: 15px;
+}
+
+.intro__title_icon {
+  background-image: url(../assets/icons/icon-intro.svg);
+}
+
+.intro__content {
+  padding-left: 15px;
+  border-left: 2px solid $color-primary;
+}
+
+.intro__content p:nth-of-type(1) {
+  margin-top: 0;
+}

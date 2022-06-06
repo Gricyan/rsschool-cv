@@ -18,91 +18,97 @@
             <img src="./assets/icons/cv-logo.svg" alt="cv logo">
           </a>
 
-          <div class="header_burger">
+          <div class="header__burger">
             <span></span>
           </div>
 
-          <nav class="header_menu">
-            <ul class="header_list">
-              <li>
-                <a href="#intro" class="header_link">Intro</a>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__list_link">
+                <a href="#intro">Intro</a>
               </li>
-              <li>
-                <a href="#contacts" class="header_link">Contacts</a>
+              <li class="menu__list_link">
+                <a href="#contacts">Contacts</a>
               </li>
-              <li>
-                <a href="#skills" class="header_link">Skills</a>
+              <li class="menu__list_link">
+                <a href="#skills">Skills</a>
               </li>
-              <li>
-                <a href="#education" class="header_link">Education</a>
+              <li class="menu__list_link">
+                <a href="#education">Education</a>
               </li>
-              <li>
-                <a href="#code" class="header_link">Code</a>
+              <li class="menu__list_link">
+                <a href="#code">Code</a>
               </li>
-              <li>
-                <a href="#my-projects" class="header_link">Projects</a>
+              <li class="menu__list_link">
+                <a href="#my-projects">Projects</a>
               </li>
             </ul>
           </nav>
+
+
         </div>
       </div>
     </header>
 
-  <div class="content">
+
     <div class="wrapper main_content">
       <aside class="left_columb">
         <section class="photo">
           <h2 class="visually-hidden">Photo Ivan Hryhoriev</h2>
-          <img src="./assets/images/my-cv-photo.jpg" alt="Photo Ivan Hryhoriev">
-          <img class="photo-frame" src="./images/frame.svg" alt="Photo Ivan Hryhoriev">
+          <img src="./assets/images/my-cv-photo.jpg" alt="Photo Ivan Hryhoriev">          
         </section>
+
         <section id="contacts">
-          <h2>Contacts</h2>
-          <ul class="contacts-list">
+          <div class="contacts__title section-title">
+            <span class="contacts__title_icon title-icon"></span>
+            <h2>Contacts</h2>
+          </div>
+          
+          <ul class="contacts__list">
             <li>
-              <img src="./assets/icons/my-phone.svg" alt="my phone"> <a href="tel:+48575684463">+48 575 684 463</a>
+              <img src="./assets/icons/my-phone.svg" alt="my phone"><a href="tel:+48575684463">+48 575 684 463</a>
             </li>
             <li>
-              <img src="./assets/icons/my-address.svg" alt="my address"> Warsaw, Poland
+              <img src="./assets/icons/my-address.svg" alt="my address"><span>Warsaw, Poland</span>
             </li>
             <li>
-              <img src="./assets/icons/my-mail.svg" alt="my mail"> <a href="mailto:admin@web-architect.pro">Email Me</a>
+              <img src="./assets/icons/my-mail.svg" alt="my mail"><a href="mailto:admin@web-architect.pro">Email Me</a>
             </li>
             <li>
-              <img src="./assets/icons/my-telegram.svg" alt="my telegram"> <a href="tg://resolve?domain=Jan_Grycan" target="_blank">Ivan_Gricyan</a>
+              <img src="./assets/icons/my-telegram.svg" alt="my telegram"><a href="tg://resolve?domain=Jan_Grycan" target="_blank">Ivan_Gricyan</a>
             </li>
             <li>
-              <img src="./assets/icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
+              <img src="./assets/icons/my-github.svg" alt="my github"><a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
             </li>
             <li>
-              <img src="./assets/icons/my-discord.svg" alt="my discord"> <a href="https://discordapp.com/users/728380730018889869/" target="_blank">Ivan Gricyan</a>
+              <img src="./assets/icons/my-discord.svg" alt="my discord"><a href="https://discordapp.com/users/728380730018889869/" target="_blank">Ivan Gricyan</a>
             </li>
             <li>
-              <img src="./assets/icons/my-linkedin.svg" alt="my linkedin"> <a href="https://www.linkedin.com/in/ivanhryhoriev/" target="_blank">ivanhryhoriev</a>
+              <img src="./assets/icons/my-linkedin.svg" alt="my linkedin"><a href="https://www.linkedin.com/in/ivanhryhoriev/" target="_blank">ivanhryhoriev</a>
             </li>
           </ul>
         </section>
+
         <section id="skills">
-          <h2>Skills</h2>
-          <ul class="skills">
-            <li>
-              HTML5, CSS3, PHP, SQL
-            </li>
-            <li>
-              JavaScript Basics
-            </li>
-            <li>
-              Git, GitHub
-            </li>
-            <li>
-              VS Code
-            </li>
-            <li>
-              Adobe Photoshop, Illustrator
-            </li>
-            <li>
-              Wordpress, Joomla
-            </li>
+          <div class="skills__title section-title">
+            <span class="skills__title_icon title-icon"></span>
+            <h2>Skills</h2>
+          </div>
+          
+          <ul class="skills__items">
+            <li>HTML5</li>
+            <li>CSS3/SCSS</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>Webpack</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Figma</li>
+            <li>Wordpress</li>           
           </ul>
         </section>
         <hr>
@@ -118,20 +124,28 @@
       </aside>
       <main class="cv_content">
 
-        <section class="who-am-i">
-          <h1>Ivan Hryhoriev</h1>
-          <span>Front-end developer</span>    
-        </section>
-    
         <section id="intro">
-          <h2>Intro</h2>
-          <p>I've been interested in information technologies since I was in school, and I even attended a programming class. There we studied how to create simple games in Pascal. Oh yeah, I'm such an old one )).</p>
-          <p>But at university, my choice fell on an jurisprudence and after graduation I worked in court for several years. There I learnt these skills well: <b>punctuality</b>, <b>meticulousness</b> and <b>stress tolerance</b>.</p>
-          <p>Meanwhile, creating things has always fascinated me, and about six years ago I made my first website for the company I was employed. The process involved me so much that I could sit for hours figuring out how it worked.</p>
-          <p>Three years ago I moved to Warsaw and studied here <b>networking</b> and <b>web development</b>.</p>
-          <p>Currently I have got a few pet projects. But it's still like a hobby of mine.</p>
+          <div class="intro__header">
+            <h1 class="intro__name">Ivan Hryhoriev</h1>
+            <div class="intro__text">
+              <span class="intro__text_frontend">Front-end developer</span>              
+            </div> 
+          </div>                  
+
+          <div class="intro__title section-title">
+            <span class="intro__title_icon title-icon"></span>
+            <h2>Intro</h2>
+          </div>
+
+          <div class="intro__content">
+            <p>My first website I made about seven years ago, when the frontend was not yet as hyped as it is now. Since then web development is my fascination and part time work.</p>
+            <p>Despite the fact that I studied law at university and worked as a judge's assistant for several years, this experience gave me valuable skills such as <span class="highlighted-text">punctuality</span>, <span class="highlighted-text">meticulousness</span> and <span class="highlighted-text">stress tolerance</span>.</p>
+            <p>Three years ago I moved to Warsaw and studied here <span class="highlighted-text">networking</span> and <span class="highlighted-text">web development</span>.</p>
+            <p>Currently, I take a frontend course from the RS School.</p>
+          </div>
+
         </section>
-        <hr>
+        
         <section id="education">
           <h2>Education</h2>
           <h3>Cosinus School</h3>
@@ -200,7 +214,7 @@ function reverse(n) {
           </div>
         </section>
       </main>
-    </div>
+ 
   </div>
   <footer class="footer">
     <div class="wrapper footer__container">

@@ -1,0 +1,53 @@
+.header__menu {
+  @extend %transition;   
+  @include media-tablet {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -110%;    
+    background-color: $color-bg-dark;
+    padding: 70px 10px 20px 0px;
+    overflow: auto; 
+  }  
+}
+
+.header__menu.active {
+  @include media-tablet {
+    top: 0%;
+  }
+}
+
+.menu__list {
+  @include flex ($flex: flex, $wrap: nowrap); 
+  padding: 0 10%;
+  text-align: right;
+  padding-inline-start: 0;
+  position: relative;
+  z-index: 2;
+  @include media-tablet {
+    display: block;
+  }
+}
+
+.menu__list li {
+  list-style: none;
+  margin: 0px 0px 0px 15px;
+  @include media-tablet {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.menu__list_link {
+  color: $color-text-light;
+  text-transform: uppercase;
+  font-size: 1.8rem; 
+  @extend %transition;  
+  &:hover {
+    color: $color-primary;
+  } 
+}
+
+.menu__list_link {
+  padding: 10px;
+}
