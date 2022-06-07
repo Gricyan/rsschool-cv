@@ -13,6 +13,10 @@
 .intro__text_frontend {  
   border-top: 2px solid $color-primary;
   padding-top: 5px; 
+  @extend %transition;
+  .light & {
+    border-top: 2px solid $color-additional;
+  }  
 }
 
 .intro__title {
@@ -26,6 +30,10 @@
 .intro__content {
   padding-left: 15px;
   border-left: 2px solid $color-primary;
+  @extend %transition;
+  .light & {
+    border-left: 2px solid $color-additional;
+  }  
 }
 
 .intro__content p:nth-of-type(1) {

@@ -14,4 +14,9 @@
   color: $color-primary;
   border-radius: 5px;
   border: 2px solid $color-primary;
+  @extend %transition;
+  .light & {
+    color: $color-additional;
+    border: 2px solid $color-additional;
+  } 
 }

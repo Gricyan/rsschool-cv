@@ -1,6 +1,12 @@
 .footer {
   background-color: $color-bg-dark-l;
   box-shadow: 0px -5px 20px 10px rgb(0 0 0 / 70%);  
+  @extend %transition; 
+  .light & {
+    background-color: $color-bg-light;
+    color: $color-bg-dark-l;  
+    box-shadow: 0px -5px 20px 10px rgb(0 0 0 / 10%); 
+  }
 }
 
 .footer__container {
@@ -28,7 +34,11 @@ footer a {
 }
 
 .footer__item_link {
-  @include flex ($flex: flex, $wrap: nowrap); 
+  @include flex ($flex: flex, $wrap: nowrap);
+  @extend %transition;
+  .light & {
+    color: $color-additional;
+  } 
 }
 
 .footer__item:nth-child(1) {
@@ -47,9 +57,17 @@ footer a {
 
 .footer__item_github {
   width: 40px;
-  padding-right: 10px;  
+  padding-right: 10px; 
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);
+  } 
 }
 
 .footer__item_rs-logo {
   width: 100px;
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);
+  } 
 }

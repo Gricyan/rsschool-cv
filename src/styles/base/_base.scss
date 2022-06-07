@@ -20,7 +20,7 @@ section {
   padding-top: 25px;
 }
 
-body.lock {
+body.menu-active {
   @include media-tablet {
     overflow: hidden;
   }  
@@ -29,16 +29,25 @@ body.lock {
 .body__wrapper {
   @extend %font-primary;
   @include font(1.6rem, 2.4rem, $spacing: 0);
-  color: $color-text-light;
+  color: $color-bg-light-l;
   background-color: $color-bg-dark;  
   caret-color: transparent;
+  @extend %transition; 
+  .light & {
+    background-color: $color-bg-light-l;
+    color: $color-bg-dark-l;  
+  }
 }
 
 .wrapper {  
   max-width: $content-width;
   margin: 0 auto;
   padding: 0px 20px;
-  background-color: $color-bg-dark-l;  
+  background-color: $color-bg-dark-l;
+  @extend %transition;   
+  .light & {
+    background-color: $color-bg-light;
+  }
 }
 
 .aside {
@@ -74,11 +83,19 @@ h3,
 h4,
 .highlighted-text {
   color: $color-primary;
+  @extend %transition;   
+  .light & {
+    color: #497385;
+  }
 }
 
 h2 {
   border-bottom: 2px solid $color-primary;
   padding-bottom: 5px;
+  @extend %transition;
+  .light & {
+    border-bottom: 2px solid $color-additional;
+  }  
 }
 
 .section-title {
@@ -93,6 +110,10 @@ h2 {
   margin-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);
+  }  
 }
 
 .item-icon {
@@ -103,4 +124,8 @@ h2 {
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);
+  }  
 }

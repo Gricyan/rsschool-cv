@@ -1,31 +1,41 @@
 .header__burger {
   display: none;
-  @include media-tablet {
-    display: block;
-  }  
+  margin-left: auto;
   position: relative;
   min-width: 30px;
   height: 20px;
   z-index: 3;
+  @include media-tablet {
+    display: block;
+  }  
 }
 .header__burger span {
   position: absolute;
-  background-color: #fff;
+  background-color: $color-bg-light;
   width: 100%;
   height: 2px;
+  border-radius: 10px;
   left: 0;
   top: 9px;
   transition: all 0.1s ease 0s;
+  .light & {
+    background-color: $color-bg-dark-l;   
+  } 
 }
 .header__burger:before,
 .header__burger:after {
   content: '';
-  background-color: #fff;
+  background-color: $color-bg-light;
   position: absolute;
   width: 100%;
   height: 2px;
+  border-radius: 10px;
   left: 0;
   transition: all 0.3s ease 0s;
+  @extend %transition;
+  .light & {
+    background-color: $color-bg-dark-l;   
+  } 
 }
 .header__burger:before {
   top: 0;

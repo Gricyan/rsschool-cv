@@ -27,11 +27,18 @@
 }
 
 .education__item a {
-  color: $color-primary;
-  @extend %transition; 
+  color: inherit; 
+  font-weight: bold;
+  @extend %transition;
   &:hover {
-    text-decoration: underline;
+    color: $color-primary;
   }
+  .light & {   
+    color: $color-additional; 
+    &:hover {
+      color: $color-primary;
+    }
+  }  
 }
 
 .education__item_icon {
@@ -55,4 +62,8 @@
   margin-right: 10px;
   background-image: url(../assets/icons/icon-circle.svg);
   background-position: center;
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);    
+  } 
 }

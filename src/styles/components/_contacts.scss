@@ -13,15 +13,25 @@
 }
 
 .contacts__list li a {
-  color: $color-text-light;
+  color: $color-bg-light-l;
   text-decoration: none;
   @extend %transition;
   &:hover {
     color: $color-primary;
   }
+  .light & {
+    color: $color-bg-dark-l;
+    &:hover {
+      color: $color-primary;
+    }
+  }
 }
 
 .contacts__list li img {
   width: 22px;
-  margin-right: 10px;    
+  margin-right: 10px;   
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);
+  }   
 }

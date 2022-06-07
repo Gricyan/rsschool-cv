@@ -1,0 +1,40 @@
+.theme-toggle {
+  z-index: 10;
+  margin-left: 20px;
+}
+
+.sun {
+  animation: rotate 1s;
+  opacity: 1;
+}
+
+.light-theme .sun {
+  opacity: 0;
+  display: none;
+  @extend %transition;
+}
+
+.moon {
+  opacity: 0;
+  display: none;
+  @extend %transition;
+}
+
+.light-theme .moon {
+  animation: rotate 1s;
+  opacity: 1;
+  display: block;
+}
+
+.icon-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  @extend %transition;
+}
+
+.icon-toggle img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}

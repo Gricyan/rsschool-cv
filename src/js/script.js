@@ -1,13 +1,16 @@
+import "./switcher";
+
 $(document).ready(function() {
     $(".header__burger, .menu__list").click(function() {
         $(".header__burger, .header__menu").toggleClass("active");
-        $("body").toggleClass("lock");
+        $("body").toggleClass("menu-active");
     });
 });
 
 const d = new Date();
 let year = d.getFullYear();
 document.getElementById("year").innerHTML = year;
+
 
 /* Intro print text */
 
