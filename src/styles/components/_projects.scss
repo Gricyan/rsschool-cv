@@ -1,0 +1,58 @@
+.projects__title_icon {
+  background-image: url(../assets/icons/icon-projects.svg);
+}
+
+.project__items {
+  @include flex ($flex: flex, $wrap: wrap); 
+  gap: 2rem;
+}
+
+.project__item {
+  width: calc(50% - 2rem);
+  @include media-tablet {    
+    width: 100%;
+  }
+}
+
+.project__item_img {
+  width: 100%;
+  border-radius: 5px;    
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 35%);
+}
+
+.project__item_info {
+  position: relative;
+  @include flex ($flex: flex, $wrap: wrap, $justify: space-between); 
+}
+
+.project__item_info-stack {
+  @include flex ($flex: flex, $wrap: wrap, $justify: space-between); 
+  gap: 0.5rem;
+}
+
+figure {
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+
+.project__item_info-stack img {
+  width: 25px;
+}
+
+.project__title::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  left: 0;
+  bottom: 5px;
+  background-color: $color-primary;
+  @extend %transition;
+  @include media-tablet {    
+    display: none;
+  }
+}
+
+.project__item:hover .project__title::after {
+  width: 100%; 
+}

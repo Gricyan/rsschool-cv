@@ -70,7 +70,7 @@
               <img src="./assets/icons/my-address.svg" alt="my address"><span>Warsaw, Poland</span>
             </li>
             <li>
-              <img src="./assets/icons/my-mail.svg" alt="my mail"><a href="mailto:admin@web-architect.pro">Email Me</a>
+              <img src="./assets/icons/my-mail.svg" alt="my mail"><a href="mailto:admin@web-architect.pro">admin@web-architect.pro</a>
             </li>
             <li>
               <img src="./assets/icons/my-telegram.svg" alt="my telegram"><a href="tg://resolve?domain=Jan_Grycan" target="_blank">Ivan_Gricyan</a>
@@ -169,8 +169,8 @@
           <ul class="education__item">
             <li><span class="education__item_icon item-icon"></span>Specialization: Information Technology Technician
               <ul>
-                <li><span class="inner-li-icon item-icon"></span>EE.08 Installation and operation of computer systems, peripheral devices and networks</li>
-                <li><span class="inner-li-icon item-icon"></span>EE.09 Programming, development and administration of websites and databases</li>
+                <li class="education__item_inner-li">EE.08 Installation and operation of computer systems, peripheral devices and networks</li>
+                <li class="education__item_inner-li">EE.09 Programming, development and administration of websites and databases</li>
               </ul>
             </li>
           </ul>
@@ -179,7 +179,7 @@
           <ul class="education__item">
             <li><span class="education__item_icon item-icon"></span>Specialization: Civil Law</li>
               <ul>
-                <li><span class="inner-li-icon item-icon"></span>Educational level: Master's degree</li>
+                <li class="education__item_inner-li">Educational level: Master's degree</li>
               </ul>
           </ul>
           
@@ -206,34 +206,106 @@ function reverse(n) {
         </section>
         
         <section id="my-projects">
-          <h2>My projects</h2>
-          <p>Here are some of them</p>
-          <div class="work_photo">
-            <figure class="single_img">
-              <a href="https://pasha-group.ru/tr/ana-sayfa/" target="_blank">
-                <img src="./assets/images/pasha-group.jpg" alt="pasha-group" class="project-item__image"></a>
-              <h3><a href="https://pasha-group.ru/tr/ana-sayfa/" target="_blank">Yarns</a></h3>
-              <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
+          <div class="projects__title section-title">
+            <span class="projects__title_icon title-icon"></span>
+            <h2>Projects</h2>
+          </div>  
+          
+          <div class="project__items">
+            
+            <figure class="project__item">
+              <img class="project__item_img" src="./assets/images/projects/shelter.jpg" alt="Shelter project">
+              <div class="project__item_info">
+                <a href="https://gricyan.github.io/JS-FE-2022/shelter/">
+                  <h3 class="project__title">Shelter</h3>
+                </a>  
+                <div class="project__item_info-stack">
+                  <img src="./assets/icons/stack-icon-html.svg" alt="HTML">
+                  <img src="./assets/icons/stack-icon-css.svg" alt="CSS">
+                  <img src="./assets/icons/stack-icon-js.svg" alt="JS">
+                </div>
+              </div>              
+            </figure>         
+            
+            <figure class="project__item">
+              <img class="project__item_img" src="./assets/images/projects/virtual-keyboard.jpg" alt="Virtual Keyboard project">
+              <div class="project__item_info">
+                <a href="https://gricyan.github.io/virtual-keyboard/dist/">
+                  <h3 class="project__title">Virtual Keyboard</h3>
+                </a>                
+                <div class="project__item_info-stack">
+                  <img src="./assets/icons/stack-icon-html.svg" alt="HTML">
+                  <img src="./assets/icons/stack-icon-css.svg" alt="CSS">
+                  <img src="./assets/icons/stack-icon-js.svg" alt="JS">
+                </div>
+              </div>              
+            </figure> 
+            
+            <figure class="project__item">
+              <img class="project__item_img" src="./assets/images/projects/movie-app.jpg" alt="Movie App project">
+              <div class="project__item_info">
+                <a href="https://gricyan.github.io/JS-FE-PRESCHOOL-2022/movie-app/">
+                  <h3 class="project__title">Movie App</h3>
+                </a>  
+                <div class="project__item_info-stack">
+                  <img src="./assets/icons/stack-icon-html.svg" alt="HTML">
+                  <img src="./assets/icons/stack-icon-css.svg" alt="CSS">
+                  <img src="./assets/icons/stack-icon-js.svg" alt="JS">
+                </div>
+              </div>              
+            </figure>         
+            
+            <figure class="project__item">
+              <img class="project__item_img" src="./assets/images/projects/custom-video-player.jpg" alt="Custom Video Player project">
+              <div class="project__item_info">
+                <a href="https://gricyan.github.io/JS-FE-PRESCHOOL-2022/custom-video/">
+                  <h3 class="project__title">Custom Video Player</h3>
+                </a>                
+                <div class="project__item_info-stack">
+                  <img src="./assets/icons/stack-icon-html.svg" alt="HTML">
+                  <img src="./assets/icons/stack-icon-css.svg" alt="CSS">
+                  <img src="./assets/icons/stack-icon-js.svg" alt="JS">
+                </div>
+              </div>              
             </figure>
-            <figure class="single_img">
-              <a href="https://shtaketa.com.ua/" target="_blank">
-                <img src="./assets/images/shtaketa.jpg" alt="shtaketa" class="project-item__image"></a>
-              <h3><a href="https://shtaketa.com.ua/" target="_blank">Shelterboard</a></h3>
-              <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
-            </figure>
-            <figure class="single_img">
-              <a href="https://vodostok.km.ua/" target="_blank">
-                <img src="./assets/images/vodostok.jpg" alt="vodostok" class="project-item__image"></a>
-              <h3><a href="https://vodostok.km.ua/" target="_blank">RainGuard</a></h3>
-              <figcaption>HTML, CSS, JS, SEO, Photoshop, Illustrator, Vegas, Wordpress</figcaption>
-            </figure>
-          </div>
+            
+            <figure class="project__item">
+              <img class="project__item_img" src="./assets/images/projects/portfolio.jpg" alt="Portfolio project">
+              <div class="project__item_info">
+                <a href="https://gricyan.github.io/JS-FE-PRESCHOOL-2022/portfolio/">
+                  <h3 class="project__title">Portfolio</h3>
+                </a>  
+                <div class="project__item_info-stack">
+                  <img src="./assets/icons/stack-icon-html.svg" alt="HTML">
+                  <img src="./assets/icons/stack-icon-css.svg" alt="CSS">
+                  <img src="./assets/icons/stack-icon-js.svg" alt="JS">
+                </div>
+              </div>              
+            </figure>         
+            
+            <figure class="project__item">
+              <img class="project__item_img" src="./assets/images/projects/memory-game.jpg" alt="Memory Game project">
+              <div class="project__item_info">
+                <a href="https://gricyan.github.io/JS-FE-PRESCHOOL-2022/memory-game/">
+                  <h3 class="project__title">Memory Game</h3>
+                </a>                
+                <div class="project__item_info-stack">
+                  <img src="./assets/icons/stack-icon-html.svg" alt="HTML">
+                  <img src="./assets/icons/stack-icon-css.svg" alt="CSS">
+                  <img src="./assets/icons/stack-icon-js.svg" alt="JS">
+                </div>
+              </div>              
+            </figure> 
+
+          </div>     
+
         </section>
       </main>
  
   </div>
+
   <footer class="footer">
-    <div class="wrapper footer__container">
+    <div class="footer__container wrapper">
       <div class="footer__item">
         <img class="footer__item_github" src="./assets/icons/my-github.svg" alt="my github"> <a href="https://github.com/Gricyan" target="_blank">Gricyan</a>
       </div>

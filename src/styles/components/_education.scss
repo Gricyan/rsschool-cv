@@ -7,15 +7,23 @@
   line-height: 3.2rem;
   list-style: none;
   & ul {
-    padding-inline-start: 13px;
+    padding-inline-start: 35px;
+    @include media-tablet {    
+      padding-inline-start: 30px;
+    }
+    @include media-mobile {    
+      padding-inline-start: 13px;
+    }
   }
 }
 
-.education__item li,
-.education__item li ul li,
-.education__item ul ul {
+.education__item li {
   @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
   gap: 0.5rem;
+  @include media-laptop {    
+    display: block;
+    margin-bottom: 1rem;
+  }
 }
 
 .education__item a {
@@ -28,10 +36,23 @@
 
 .education__item_icon {
   background-image: url(../assets/icons/icon-checked.svg);
+  @include media-laptop {    
+    transform: translateY(25%);
+  }  
 }
 
 .inner-li-icon {
   width: 0.7rem;
   height: 0.7rem;
   background-image: url(../assets/icons/icon-circle.svg);
+}
+
+.education__item_inner-li::before {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 10px;
+  background-image: url(../assets/icons/icon-circle.svg);
+  background-position: center;
 }
