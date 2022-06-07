@@ -3,10 +3,10 @@
 }
 
 .skills__items {
-    @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
-    gap: 0.5em; 
-    list-style: none;
-    padding-inline-start: 0;
+  @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
+  gap: 0.5em; 
+  list-style: none;
+  padding-inline-start: 0;
 }
 
 .skills__items li {

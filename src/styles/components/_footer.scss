@@ -14,6 +14,9 @@
 
 footer a {
   color: $color-primary;
+  &:hover {
+    animation: shake 0.5s ease-in-out;
+  }
 }
 
 .footer__item {
@@ -22,6 +25,10 @@ footer a {
   @include media-mobile {    
     width: 100%;
   }
+}
+
+.footer__item_link {
+  @include flex ($flex: flex, $wrap: nowrap); 
 }
 
 .footer__item:nth-child(1) {

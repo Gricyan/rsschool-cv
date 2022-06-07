@@ -15,6 +15,7 @@
 .contacts__list li a {
   color: $color-text-light;
   text-decoration: none;
+  @extend %transition;
   &:hover {
     color: $color-primary;
   }
