@@ -12,8 +12,7 @@
 .footer__container {
   @include flex ($flex: flex, $wrap: nowrap, $justify: space-evenly); 
   padding: 15px 20px;
-  @include media-mobile {    
-    flex-direction: column;
+  @include media-mobile {
     gap: 10px;
     padding: 25px 20px;
   }
@@ -61,7 +60,10 @@ footer a {
   @extend %transition;
   .light & {
     filter: brightness(0.5);
-  } 
+  }
+  @include media-mobile {    
+    width: 30px;
+  }
 }
 
 .footer__item_cv {
@@ -73,7 +75,10 @@ footer a {
   @extend %transition;
   .light & {
     filter: brightness(0.5);
-  } 
+  }
+  @include media-mobile {    
+    width: 30px;
+  }
 }
 
 .footer__item_rs-logo {
@@ -81,5 +86,8 @@ footer a {
   @extend %transition;
   .light & {
     filter: brightness(0.5);
-  } 
+  }
+  @include media-mobile {    
+    width: 80px;
+  }
 }
