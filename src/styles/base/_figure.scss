@@ -1,0 +1,21 @@
+figure {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  line-height: 0;
+}
+
+.project__item_figure-caption h4 {
+  margin: 10px 0 15px;
+}
+
+.figure__caption li {
+  @include flex ($flex: flex, $wrap: wrap, $justify: flex-start); 
+}
+
+.figure__caption_icon {
+  background-image: url(../assets/icons/icon-checked.svg);
+  width: 20px;
+}

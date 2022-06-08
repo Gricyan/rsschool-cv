@@ -60,8 +60,10 @@
   width: 0.7rem;
   height: 0.7rem;
   margin-right: 10px;
+  padding-bottom: 3px;  
   background-image: url(../assets/icons/icon-circle.svg);
   background-position: center;
+  background-repeat: no-repeat;
   @extend %transition;
   .light & {
     filter: brightness(0.5);    

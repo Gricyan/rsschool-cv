@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-bg-dark-l;
-  box-shadow: 0px -5px 20px 10px rgb(0 0 0 / 70%);  
+  box-shadow: 0px -5px 20px 10px rgb(0 0 0 / 50%);  
   @extend %transition; 
   .light & {
     background-color: $color-bg-light;
@@ -15,6 +15,7 @@
   @include media-mobile {    
     flex-direction: column;
     gap: 10px;
+    padding: 25px 20px;
   }
 }
 
@@ -58,6 +59,15 @@ footer a {
 .footer__item_github {
   width: 40px;
   padding-right: 10px; 
+  @extend %transition;
+  .light & {
+    filter: brightness(0.5);
+  } 
+}
+
+.footer__item_cv {
+  width: 40px;
+  justify-content: center;
   @extend %transition;
   .light & {
     filter: brightness(0.5);

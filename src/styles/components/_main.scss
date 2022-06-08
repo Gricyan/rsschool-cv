@@ -5,10 +5,11 @@
   @include media-tablet {
     display: block;
     margin-top: 65px;    
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }     
   @include media-mobile {    
     margin-top: 50px;
+    padding-bottom: 40px;
   }     
 }
 
