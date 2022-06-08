@@ -28,7 +28,6 @@ footer a {
 
 .footer__item {
   width: 33%;  
-  text-align: center;
   @include media-mobile {    
     width: 100%;
   }
@@ -66,8 +65,11 @@ footer a {
 }
 
 .footer__item_cv {
-  width: 40px;
   justify-content: center;
+}
+
+.footer__item_cv img {
+  width: 40px;
   @extend %transition;
   .light & {
     filter: brightness(0.5);
