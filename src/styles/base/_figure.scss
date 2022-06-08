@@ -8,7 +8,10 @@ figure {
 }
 
 .project__item_figure-caption h4 {
-  margin: 10px 0 15px;
+  margin: 5px 0 15px;
+  @include media-tablet {    
+    margin: 0 0 5px;
+  } 
 }
 
 .figure__caption li {
@@ -18,4 +21,7 @@ figure {
 .figure__caption_icon {
   background-image: url(../assets/icons/icon-checked.svg);
   width: 20px;
+  @include media-tablet {    
+    width: 15px;
+  } 
 }

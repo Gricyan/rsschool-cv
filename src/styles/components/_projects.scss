@@ -36,10 +36,10 @@
   top: 0;
   left: 0;
   line-height: 2.4rem;
-  @include flex ($flex: flex, $wrap: wrap, $justify: center); 
-  flex-direction: column;
+  @include flex ($flex: flex, $wrap: nowrap, $justify: center);   
   color: $color-primary;
   background-color: $color-bg-dark-transparent;
+  flex-direction: column;
   @extend %transition;
   transform: translateY(100%); 
   .project__item_figure:hover & {
@@ -55,22 +55,26 @@
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-inline-start: 20px;
+  padding-inline-start: 20px; 
+  @include media-tablet {    
+    font-size: 80%;
+    line-height: 80%;
+  } 
 }
 
 .project__item_info {
   position: relative;
   @include flex ($flex: flex, $wrap: wrap, $justify: space-between); 
+  & h3 {
+    @include media-mobile {    
+      font-size: 1.5rem;      
+    } 
+  }
 }
 
 .project__item_info-stack {
   @include flex ($flex: flex, $wrap: wrap, $justify: space-between); 
   gap: 0.5rem;
-}
-
-figure {
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 
 .project__item_info-stack img {
