@@ -1,0 +1,81 @@
+
+[{ 
+  "id": 8, 
+  "title": "Shelter",
+  "taskName": "Shelter task",
+  "imgSrc": "shelter.jpg",
+  "imgAlt": "Shelter project",
+  "link": "https://gricyan.github.io/JS-FE-2022/shelter/",
+  "stack": [ "html", "css", "js", "sass"],
+  "taskItems": ["Multi-pages website", "Pixel perfect design", "Custom slider", "Pagination"]
+},
+{ 
+  "id": 7, 
+  "title": "Virtual Keyboard",
+  "taskName": "Virtual Keyboard task",
+  "imgSrc": "virtual-keyboard.jpg",
+  "imgAlt": "Virtual Keyboard project",
+  "link": "https://gricyan.github.io/virtual-keyboard/",
+  "stack": [ "html", "css", "js", "webpack"],
+  "taskItems": ["Screen keyboard implementation", "Language switcher", "Classes and modules", "Webpack"]
+},
+{ 
+  "id": 6, 
+  "title": "Css Meme Slider",
+  "taskName": "Css Meme Slider task",
+  "imgSrc": "css-meme-slider.jpg",
+  "imgAlt": "Css Meme Slider project",
+  "link": "https://gricyan.github.io/cssMemSlider/cssMemSlider/",
+  "stack": [ "html", "css"],
+  "taskItems": ["Pure CSS realization", "Sense of humor ))", "Responsive design", "Animations"]
+},
+{ 
+  "id": 5, 
+  "title": "Movie App",
+  "taskName": "Movie App task",
+  "imgSrc": "movie-app.jpg",
+  "imgAlt": "Movie App project",
+  "link": "https://gricyan.github.io/JS-FE-PRESCHOOL-2022/movie-app/",
+  "stack": [ "html", "css", "js", "api"],
+  "taskItems": ["API interaction", "Data processing", "Responsive design", "Animations"]
+},
+{ 
+  "id": 4, 
+  "title": "Custom Video Player",
+  "taskName": "Custom Video Player task",
+  "imgSrc": "custom-video-player.jpg",
+  "imgAlt": "Custom Video Player project",
+  "link": "https://gricyan.github.io/JS-FE-PRESCHOOL-2022/custom-video/",
+  "stack": [ "html", "css", "js"],
+  "taskItems": ["Default player replication", "Custom style", "Responsive design", "Animations"]
+},
+{ 
+  "id": 3, 
+  "title": "Portfolio",
+  "taskName": "Portfolio task",
+  "imgSrc": "portfolio.jpg",
+  "imgAlt": "Portfolio project",
+  "link": "https://gricyan.github.io/JS-FE-PRESCHOOL-2022/portfolio/",
+  "stack": [ "html", "css", "js"],
+  "taskItems": ["Selecting gallery photos", "Languages switcher", "Dark / Light theme", "Responsive design"]
+},
+{ 
+  "id": 2, 
+  "title": "Memory Game",
+  "taskName": "Memory Game task",
+  "imgSrc": "memory-game.jpg",
+  "imgAlt": "Memory Game project",
+  "link": "https://gricyan.github.io/JS-FE-PRESCHOOL-2022/memory-game/",
+  "stack": [ "html", "css", "js"],
+  "taskItems": ["Unordinary implementation", "Score counter", "Local Storage saving", "Animations"]
+},
+{ 
+  "id": 1, 
+  "title": "Web-studio",
+  "taskName": "Web-studio landing page",
+  "imgSrc": "web-architect.jpg",
+  "imgAlt": "Web Architect project",
+  "link": "https://web-architect.pro/",
+  "stack": [ "html", "css", "js"],
+  "taskItems": ["Parallax effect", "Responsive design", "Telegram messaging", "Animations"]
+}]

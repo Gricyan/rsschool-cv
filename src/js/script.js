@@ -1,4 +1,30 @@
+import { Project } from "../js/Project";
+import data from "../js/projects";
 import "./switcher";
+
+
+window.onload = () => {
+    renderProjectsToDom();
+};
+
+const renderProjectsToDom = () => {
+
+    const projectsContainer = document.querySelector(".project__items");
+    generateProjects(data).forEach(project => {
+        projectsContainer.append(project.generateProject());
+    });        
+};
+
+const generateProjects = (data) => {
+    let projects = [];
+    data.forEach(project => {
+        projects.push(new Project(project));
+    });
+    return projects;
+};
+
+
+/* Mobile menu handler */
 
 $(document).ready(function() {
     $(".header__burger, .menu__list").click(function() {
@@ -7,9 +33,9 @@ $(document).ready(function() {
     });
 });
 
-const d = new Date();
-let year = d.getFullYear();
-document.getElementById("year").innerHTML = year;
+// const d = new Date();
+// let year = d.getFullYear();
+// document.getElementById("year").innerHTML = year;
 
 
 /* Intro print text */
