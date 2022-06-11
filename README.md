@@ -3,4 +3,4 @@ RS School CV tasks
 
 https://gricyan.github.io/rsschool-cv/
 
-source code in "task-1" branch
+source code in "stage-1" branch
