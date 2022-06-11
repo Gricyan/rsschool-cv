@@ -33,6 +33,40 @@ $(document).ready(function() {
     });
 });
 
+/* To top btn handler */
+
+const toTopBtn = document.querySelector(".to-top-btn");
+// const footer = document.querySelector(".footer");
+
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= screen.height) {
+        toTopBtn.classList.add("visible");
+        
+        let bodyHeight = document.querySelector("body").offsetHeight;       
+        let bodyWidth = document.querySelector("body").offsetWidth;       
+        let footerHeight = document.querySelector("footer").offsetHeight; 
+        let totalHeight = bodyHeight - (screen.height + window.scrollY) + footerHeight; 
+
+        if (totalHeight < 15 || bodyWidth < 425 && totalHeight < 40) {
+            toTopBtn.classList.add("upper");
+        } else {
+            toTopBtn.classList.remove("upper");
+        }
+    } else {
+        toTopBtn.classList.remove("visible");
+    }
+});
+
+toTopBtn.addEventListener("click", toTopScroll);
+
+function toTopScroll() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+/* Show date */
+
 // const d = new Date();
 // let year = d.getFullYear();
 // document.getElementById("year").innerHTML = year;

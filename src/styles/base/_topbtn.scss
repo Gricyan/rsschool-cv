@@ -1,0 +1,35 @@
+.to-top-btn {
+  content: "";
+  position: fixed;
+  width: 55px;
+  height: 60px;
+  right: 20px;
+  bottom: 20px;
+  background-image: url(../assets/icons/icon-rocket.svg);
+  background-size: contain;;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 5;
+  opacity: 0.9;
+  cursor: pointer;
+  transform: translateY(200px);
+  @extend %transition;
+  @include media-tablet {
+    width: 50px;
+    height: 45px;
+  }  
+  @include media-mobile {
+    width: 40px;
+    height: 35px;    
+  }
+  &.visible {
+    transform: translateY(0);
+  }
+  &.upper {
+    bottom: 80px;
+    animation: start 0.5s ease-in-out;
+    @include media-mobile {
+      bottom: 90px; 
+    }
+  }
+}
