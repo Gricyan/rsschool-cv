@@ -36,19 +36,17 @@ $(document).ready(function() {
 /* To top btn handler */
 
 const toTopBtn = document.querySelector(".to-top-btn");
-// const footer = document.querySelector(".footer");
-
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= screen.height) {
+    if (window.scrollY >= 100) {
         toTopBtn.classList.add("visible");
         
         let bodyHeight = document.querySelector("body").offsetHeight;       
         let bodyWidth = document.querySelector("body").offsetWidth;       
         let footerHeight = document.querySelector("footer").offsetHeight; 
-        let totalHeight = bodyHeight - (screen.height + window.scrollY) + footerHeight; 
+        let toTopBtnDistanceToBottom = bodyHeight - (screen.height + window.scrollY) + footerHeight; 
 
-        if (totalHeight < 15 || bodyWidth < 425 && totalHeight < 40) {
+        if (toTopBtnDistanceToBottom < 15 || bodyWidth < 425 && toTopBtnDistanceToBottom < 40) {
             toTopBtn.classList.add("upper");
         } else {
             toTopBtn.classList.remove("upper");
