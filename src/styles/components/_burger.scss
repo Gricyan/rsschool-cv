@@ -5,6 +5,7 @@
   min-width: 30px;
   height: 20px;
   z-index: 3;
+  caret-color: transparent;
   @include media-tablet {
     display: block;
   }  

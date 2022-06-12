@@ -43,6 +43,7 @@
   overflow: hidden;
   position: relative;
   z-index: 3;
+  caret-color: transparent;
   @include media-tablet {
     flex: 0 0 115px;
   }  
