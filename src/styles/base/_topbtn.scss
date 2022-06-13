@@ -14,7 +14,7 @@
   cursor: pointer;
   caret-color: transparent;
   transform: translateY(200px);
-  @extend %transition;  
+  @extend %transition; 
   @include media-tablet {
     width: 50px;
     height: 45px;
@@ -35,8 +35,15 @@
   }
 }
 
-#to-top-btn {
-  .light & {
-    filter: brightness(0.5) !important;
-  }
+.dark .to-top-btn,
+.dark .to-top-btn.visible,
+.dark .to-top-btn.upper {  
+  filter: brightness(1); 
+}
+
+.light .to-top-btn,
+.light .to-top-btn.visible,
+.light .to-top-btn.upper {   
+  @extend %transition; 
+  filter: brightness(0.5) !important; 
 }
