@@ -37,6 +37,6 @@
 
 #to-top-btn {
   .light & {
-    filter: brightness(0.5);
+    filter: brightness(0.5) !important;
   }
 }
