@@ -70,3 +70,6 @@ function reverse(n) {
 * **Ukrainian** (*native*)
 * **Polish** (*B1*)
 * **English** (*B1*)
+
+---
+![logo rs-school](./assets/images/rsschool-logo.png "logo rs-school")
