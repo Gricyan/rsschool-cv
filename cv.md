@@ -23,3 +23,50 @@ _Linkedin:_     **[ivanhryhoriev](https://www.linkedin.com/in/ivanhryhoriev/)**
 * GitHub, VS Code
 * Adobe Photoshop, Illustrator
 * Wordpress, Joomla, Danneo
+
+## Education:
+
+* **Cosinus Secondary School**
+    * *Specialisation*: **Information Technology Technician**
+    * *Professional qualifications*:
+        * **EE.08** *Installation and operation of computer systems, peripheral devices and networks*
+        * **EE.09** *Programming, development and administration of websites and databases*
+
+
+* **Khmelnytsky University of Management and Law**
+    * *Specialization*: **Civil Law**
+    * *Educational level*: **Master's degree**
+
+## Trainings and courses:
+
+* **English Translator** - First Kiev Foreign Language Courses
+* **IT Essential**: *PC Hardware and Software* - Cisco Networking Academy
+* **[CCNAv7](https://www.credly.com/badges/72883930-5411-44c6-a176-095d591a15d6?source=linked_in_profile)**: *Introduction to Networks* - Cisco Networking Academy
+* **HTML, CSS, JS Basics** - **[Sololearn](https://www.sololearn.com/profile/23960808)** and **[Code-basics](https://code-basics.com/)**
+
+![Code-basics courses](./assets/images/code-basics.png "Code-basics courses")
+
+## Code example:
+
+> "Talk is cheap. Show me the code." \
+`Linus Torvalds said these words.`
+`The idea of code below I took from the internet, modified it, and it works well for me.`
+
+```javascript
+function reverse(n) {
+  let str = String(Math.abs(n));
+  let result = '';
+  for (let i = 0; i &#60; str.length; i++) {
+
+      result = `${str[i]}${result}`
+  }
+  return result;
+}
+```
+
+## Languages:
+
+* **Russian** (*native*)
+* **Ukrainian** (*native*)
+* **Polish** (*B1*)
+* **English** (*B1*)
