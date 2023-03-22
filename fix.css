@@ -1,0 +1,21 @@
+.education__item-description {
+  margin: 0;
+}
+
+.experience__item {
+  margin-top: 15px;
+}
+
+.experience__item .education__item_inner-li {
+  display: block;
+  list-style: none;
+}
+
+.certificates__title_icon {
+  background-image: url(./assets/icons/icon-certificate.svg);
+}
+
+.footer__item_resume {
+  height: 35px;
+  margin: auto;
+}
